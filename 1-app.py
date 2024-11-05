@@ -15,7 +15,7 @@ os.environ['HF_TOKEN']=os.getenv("HF_TOKEN")
 os.environ["OPENAI_API_KEY"] = os.getenv('OPENAI_API_KEY')
 
 ## LangSmith Tracking 
-os.environ['LANGCHAIN_API_KEY']= "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"
+os.environ['LANGCHAIN_API_KEY']= ""
 os.environ["LANGCHAIN_TRACING_V2"]='true'
 os.environ["LANGCHAIN_ENDPOINT"]="https://api.smith.langchain.com"
 os.environ["LANGCHAIN_PROJECT"]="AutoML-DataScientist"
