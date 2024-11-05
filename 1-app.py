@@ -137,16 +137,16 @@ if api_key:
 
     def get_best_accuracy_model(model_accuracy_string):
 
-        # Convert into a list
+        
         output_list = ast.literal_eval(model_accuracy_string)
 
         model_accuracies = []
 
-        # Process each item in the list
+        
         for item in output_list:
 
             model_name, accuracy_str = item.split(':(')
-            # Closing parenthesis and convert accuracy to float
+            
             accuracy = float(accuracy_str.rstrip(')'))
             model_accuracies.append((model_name, accuracy))
 
