@@ -93,22 +93,22 @@ if api_key:
 
     # Get the code for the Classification Models
     def classification_models(filename="4-ClassificationModels.py"):
-        # Read the existing content of the file
+        # Read the content of the file
         try:
             with open(filename, "r") as file:
                 existing_content = file.read()
         except FileNotFoundError:
-            existing_content = '' # Doesn't exist, initialize existing_content as an empty string
+            existing_content = '' 
         return existing_content
     
     # Get the code for the Regression Models
     def regression_models(filename="3-RegressionModels.py"):
-        # Read the existing content of the file
+        # Read the content of the file
         try:
             with open(filename, "r") as file:
                 existing_content = file.read()
         except FileNotFoundError:
-            existing_content = '' # Doesn't exist, initialize existing_content as an empty string
+            existing_content = '' 
         return existing_content
     
     # Create a file that contains the Data Preprocessing code given by LLM + The models to Apply based on the problem        
