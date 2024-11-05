@@ -1,1 +1,7 @@
-
+streamlit
+langchain
+langchain_groq
+pandas
+re
+langchain_openai
+ast
